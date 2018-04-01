@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate { //UITextFieldDelegate tells the compiler that the ViewController class can act as a valid text field delegate.
+class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+   
+    
     //MARK: Properties
     
     @IBOutlet weak var nameTextField: UITextField!
@@ -22,6 +24,7 @@ class ViewController: UIViewController, UITextFieldDelegate { //UITextFieldDeleg
   
         // Handle the text field’s user input through delegate callbacks.
         nameTextField.delegate = self
+     
         //self keyword is to represent the view controller class because it's referenced inside the scope of the View controller class definition (like this. in java?)
         
     }
@@ -41,7 +44,40 @@ class ViewController: UIViewController, UITextFieldDelegate { //UITextFieldDeleg
         mealNameLabel.text = textField.text
     }
     
+    //MARK: UIImagePickerControllerDelegate
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        //dismiss the picker if the user canceled
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]){
+        guard let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage else{
+            fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
+        }
+        // Set photoImageView to display the selected image.
+        photoImageView.image = selectedImage
+        // Dismiss the picker.
+        dismiss(animated: true, completion: nil)
+    }
+    
     //MARK: Actions
+    @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
+        //Hide the keyboard
+          //ensures that if the user taps the image view while typing in the text field. the keyboard is dismissed properly
+        nameTextField.resignFirstResponder()
+        
+      //UIImagePickerController is a view controller that lets a user pick media from their photo library
+        let imagePickerController = UIImagePickerController() //creates image picker controller
+        
+        //only allow photos to be picked, not taken
+        imagePickerController.sourceType = .photoLibrary //.photolibrary uses the simulatos camera roll
+        
+         //make sure ViewController is notified when the user picks an image
+        imagePickerController.delegate = self
+        
+        present(imagePickerController, animated: true, completion: nil)
+        
+    }
     
     @IBAction func setDefaultLabelText(_ sender: UIButton) {
         mealNameLabel.text = "Default Text"
