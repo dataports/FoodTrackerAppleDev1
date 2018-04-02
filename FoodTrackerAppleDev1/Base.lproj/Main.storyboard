@@ -51,7 +51,7 @@
                                             <outletCollection property="gestureRecognizers" destination="59K-Wp-jcV" appends="YES" id="Xeg-JC-YEf"/>
                                         </connections>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SFz-W9-icK" customClass="RatingControl" customModule="FoodTrackerAppleDev1" customModuleProvider="target">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SFz-W9-icK" customClass="RatingControl" customModule="FoodTrackerAppleDev1" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="432.5" width="200" height="110"/>
                                     </stackView>
                                 </subviews>
