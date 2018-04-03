@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FoodTrackerAppleDev1/Meal.swift"
+            timestampString = "544415862.111425"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodTrackerAppleDev1.Meal.__deallocating_deinit"
+                  moduleName = "FoodTrackerAppleDev1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sophieamin/Documents/GitHub/FoodTrackerAppleDev1/FoodTrackerAppleDev1/Meal.swift"
+                  timestampString = "544416024.746375"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodTrackerAppleDev1.Meal.__allocating_init() -&gt; FoodTrackerAppleDev1.Meal"
+                  moduleName = "FoodTrackerAppleDev1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sophieamin/Documents/GitHub/FoodTrackerAppleDev1/FoodTrackerAppleDev1/Meal.swift"
+                  timestampString = "544416024.748955"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodTrackerAppleDev1.Meal.init() -&gt; FoodTrackerAppleDev1.Meal"
+                  moduleName = "FoodTrackerAppleDev1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sophieamin/Documents/GitHub/FoodTrackerAppleDev1/FoodTrackerAppleDev1/Meal.swift"
+                  timestampString = "544416024.751559"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
